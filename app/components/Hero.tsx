@@ -18,7 +18,7 @@ export default function Hero() {
             animate="animate"
             transition={{ ...scaleIn.transition, delay: 0.2 }}
           >
-            <Image src="/Me_1.1.png" alt="Profile" width={100} height={100} className="rounded-full mb-4 w-32 h-32 object-cover ring-2 ring-primary" />
+            <Image src="/Me_1.1.png" alt="Profile" width={100} height={100} className="rounded-full mb-4 w-36 h-36 object-cover ring-2 ring-primary" style={{ objectPosition: 'center 35%' }} />
           </motion.div>
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-6"

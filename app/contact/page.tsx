@@ -9,13 +9,23 @@ export default function Contact() {
   return (
     <div className="container max-w-7xl mx-auto py-12">
       <motion.h1 
-        className="text-4xl font-bold mb-8 text-center"
-        {...fadeInUp}
+        className="text-4xl font-bold mb-4 text-center"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
       >
         Contact Me
       </motion.h1>
+      <motion.p 
+        className="text-lg text-secondary mb-24 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        Feel free to reach out to me through any of the following methods.
+      </motion.p>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-15 md:gap-20">
         {/* Contact Information */}
         <motion.div 
           className="space-y-8"
@@ -23,10 +33,6 @@ export default function Contact() {
         >
           <motion.div {...fadeInUp}>
             <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-            <p className="text-secondary">
-              I&apos;m always open to discussing new projects, creative ideas, or
-              opportunities to be part of your visions.
-            </p>
           </motion.div>
           
           <motion.div 
@@ -86,8 +92,7 @@ export default function Contact() {
           {...slideInRight}
         >
           <motion.div {...fadeInUp}>
-            <h2 className="text-2xl font-semibold mb-4 ">Connect on Social Media</h2>
-            <p className="text-secondary ">Feel free to reach out to me on any of these platforms.</p>
+            <h2 className="text-2xl font-semibold mb-2 ">Connect on Social Media</h2>
           </motion.div>
           <motion.div
             className="space-y-4"
