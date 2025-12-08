@@ -20,7 +20,7 @@ export const projects: Project[] = [
         description: 'A deep learning project for classifying brain tumors using MRI images.',
         technologies: ['Python', 'TensorFlow', 'Keras', 'ResNet50'],
         githubLink: 'https://github.com/Sweekar-Bajimaya/Brain-Tumor-Classification',
-        image: '/projects/ResNet50 Model Prediction.png',
+        image: '/projects/Project2.png',
       },
       {
         title: 'ServiceBuddy - Appointment Management System',
